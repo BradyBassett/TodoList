@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "todo_items")
 public class TodoItemEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "todo_item_id_seq")
     private long id;
